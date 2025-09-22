@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <title>Search Events — Perth Cares</title>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+<header><h1>Search Events</h1></header>
+<nav>
+  <a href="index.html">Home</a>
+  <a href="search.html">Search Events</a>
+</nav>
+<main>
+  <div class="form-row">
+    <div>
+      <label for="date">Date</label>
+      <input id="date" class="input" type="date"/>
+    </div>
+    <div>
+      <label for="location">Location</label>
+      <input id="location" class="input" placeholder="Perth, Fremantle, ..."/>
+    </div>
+    <div>
+      <label for="category">Category</label>
+      <select id="category" class="input"></select>
+    </div>
+  </div>
+  <div style="margin-top:12px;display:flex;gap:10px">
+    <button id="btnSearch" class="btn">Search</button>
+    <button id="btnClear" class="btn" style="background:#2a376e;color:#cfe0ff">Clear Filters</button>
+  </div>
+  <p id="msg" class="note"></p>
+  <h2>Results</h2>
+  <div id="results" class="grid"></div>
+</main>
+<footer>© Perth Cares</footer>
+<script src="js/search.js"></script>
+</body>
+</html>
