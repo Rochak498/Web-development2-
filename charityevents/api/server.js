@@ -13,13 +13,5 @@ app.get('/api/health', (_req, res) => res.json({ ok: true }));
 app.use('/api/categories', categories);
 app.use('/api/events', events);
 
-app.get('/', (req, res) => {
-  res.send('API is alive ✅ Try /api/events or your other endpoints.');
-});
-
-app.get('/healthz', (req, res) => {
-  res.json({ ok: true });
-});
-
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`API running on http://localhost:${PORT}`));

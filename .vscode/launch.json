@@ -5,7 +5,7 @@
       "name": "API: nodemon",
       "type": "node",
       "request": "launch",
-      "cwd": "${workspaceFolder}/charityevents/api",   // 👈 point to where package.json lives
+      "cwd": "${workspaceFolder}/api",
       "runtimeExecutable": "npm",
       "runtimeArgs": ["run", "dev"],
       "console": "integratedTerminal",
